@@ -6,7 +6,7 @@
 .nav-link {
   font-size: 14px;
   font-weight: 400;
-  color: black !important;
+  /* color: black !important; */
 }
 
 .btn {
@@ -166,4 +166,12 @@
 }
 .text:hover {
   background-color: #5cb85f;
+}
+
+.btn-user {
+  background-color: #5cb85f;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
 }

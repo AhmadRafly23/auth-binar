@@ -64,7 +64,12 @@ function NavbarUser() {
           <a className="nav-link link mr-4" href="#">
             FAQ
           </a>
-          <a href="/" className="nav-link" onClick={logOut}>
+          <a
+            href="/"
+            className="btn-user"
+            onClick={logOut}
+            style={{ textDecoration: "none" }}
+          >
             LogOut
           </a>
         </div>

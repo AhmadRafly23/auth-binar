@@ -82,7 +82,11 @@ function MainUser() {
                 </form>
               </div>
               <div className="button-search">
-                <Link className="btn" to={"#"}>
+                <Link
+                  className="btn-user"
+                  to={"#"}
+                  style={{ textDecoration: "none" }}
+                >
                   Cari Mobil
                 </Link>
               </div>

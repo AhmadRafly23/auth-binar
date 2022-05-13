@@ -55,23 +55,6 @@
   border-radius: 50%;
 }
 
-.testimonial-box {
-  background-color: #f1f3ff;
-  border-radius: 8px;
-  padding: 2rem 2rem;
-  margin: 0 0.5rem;
-}
-
-.testimonial-img {
-  width: 80px !important;
-  height: 80px !important;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.active-star {
-  color: #f9cc00;
-}
-
 [aria-expanded="false"] > .expanded,
 [aria-expanded="true"] > .collapsed {
   display: none;

@@ -8,7 +8,7 @@ import { isEmail } from "validator";
 
 import { register } from "../actions/auth";
 import { Link } from "react-router-dom";
-
+import "../stylesheets/Register.css";
 // 1. Mencari tombol register
 
 const required = (value) => {
@@ -108,7 +108,7 @@ const Register = () => {
             />
           </div>
           <div className="col-4">
-            <div className="row h-100">
+            <div className="row mx-5 h-100">
               <div className="col-12 d-flex flex-column justify-content-center">
                 <img
                   src="./image/logo-bcr.png"
@@ -119,41 +119,20 @@ const Register = () => {
                     marginBottom: "1.5rem",
                   }}
                 />
-                <p style={{ fontWeight: "bold", fontSize: "1.5rem" }}>
+                <p
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "1.5rem",
+                    marginBottom: "1rem",
+                  }}
+                >
                   Welcome, Admin BCR
                 </p>
 
-                {/* <Form>
-                  <div className="form-group">
-                    <label htmlFor="username">Email</label>
-                    <Input
-                      type="text"
-                      className="form-control input-login"
-                      name="username"
-                      placeholder="Contoh: ahmad@gmail.com"
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="password">Password</label>
-                    <Input
-                      type="password"
-                      className="form-control input-login"
-                      name="password"
-                      placeholder="6+ karakter"
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <button className="btn btn-primary btn-block input-login">
-                      <span>Sign In</span>
-                    </button>
-                  </div>
-                </Form> */}
                 <Form onSubmit={handleRegister} ref={form}>
                   {!successful && (
                     <div>
-                      <div className="form-group">
+                      <div className="form-group input-register">
                         <label htmlFor="username">Username</label>
                         <Input
                           type="text"
@@ -165,11 +144,11 @@ const Register = () => {
                         />
                       </div>
 
-                      <div className="form-group">
-                        <label htmlFor="email">Email</label>
+                      <div className="form-group input-register">
+                        <label htmlFor="email">Email:</label>
                         <Input
                           type="text"
-                          className="form-control"
+                          className="form-control "
                           name="email"
                           value={email}
                           onChange={onChangeEmail}
@@ -177,8 +156,8 @@ const Register = () => {
                         />
                       </div>
 
-                      <div className="form-group">
-                        <label htmlFor="password">Password</label>
+                      <div className="form-group input-register">
+                        <label htmlFor="password">Password:</label>
                         <Input
                           type="password"
                           className="form-control"
@@ -191,9 +170,7 @@ const Register = () => {
 
                       {/* 2. Menemukan tombol kirim sign up */}
                       <div className="form-group">
-                        <button className="btn btn-primary btn-block">
-                          Sign Up
-                        </button>
+                        <button className="btn-register">Sign Up</button>
                       </div>
                     </div>
                   )}
@@ -217,7 +194,7 @@ const Register = () => {
                 <p>
                   Alerady have an account?
                   <span>
-                    <Link to={"/login"}>Login</Link>
+                    <Link to={"/login"}> Login</Link>
                   </span>
                 </p>
               </div>

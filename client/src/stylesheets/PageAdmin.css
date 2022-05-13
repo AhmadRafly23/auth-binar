@@ -1,0 +1,283 @@
+*,
+p {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+}
+
+.col-nav {
+  background-color: #0d28a6;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.box-rectangle {
+  width: 34px;
+  height: 34px;
+  background-color: #e5e5e5;
+  margin: 18px 0;
+}
+
+.cek {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+}
+.nav-text {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: white;
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+}
+
+.icon {
+  width: 100px;
+  height: 34px;
+  background-color: #e5e5e5;
+}
+
+.col-box {
+  padding: 18px 0;
+  margin-left: 24px;
+}
+
+.col-item {
+  margin-top: 23px;
+}
+
+.list-item {
+  padding: 11px 0;
+  padding-left: 24px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: gray;
+}
+
+.navbar-admin {
+  height: 70px;
+  display: flex;
+  width: 84%;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  align-items: center;
+}
+
+.search {
+  padding: 8px 15px;
+  border: 1px solid rgb(187, 187, 187);
+}
+
+.button {
+  position: relative;
+  padding: 7px 15px;
+  left: -5px;
+  color: #0d28a6;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid #0d28a6;
+}
+
+a:hover {
+  font-weight: bold !important;
+}
+
+.sub-tree a {
+  color: black;
+  text-decoration: inherit;
+}
+
+.btn-add {
+  width: 142px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #0d28a6;
+}
+
+.btn-size {
+  background-color: white;
+  color: #cfd4ed;
+  font-weight: bold;
+  border: 2px solid #cfd4ed;
+  padding: 4px 8px;
+  margin-right: 1rem;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.btn.btn-danger {
+  width: 143.5px;
+  height: 48px;
+  background-color: white;
+  color: red;
+  font-weight: 700;
+  padding: 8px 12px;
+  margin-right: 16px;
+}
+
+.btn.btn-success {
+  width: 143.5px;
+  height: 48px;
+  background-color: #5cb85f;
+  color: white;
+  font-weight: 700;
+  padding: 8px 12px;
+}
+
+.dropdown-menu {
+  width: 100px !important;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.row > * {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.form-head {
+  margin-top: 120px;
+  padding-left: 55px !important;
+  padding-right: 55px !important;
+}
+
+.form-head h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+
+  color: #000000;
+  margin-top: 24px;
+}
+
+.form-content {
+  padding-left: 55px !important;
+  padding-right: 55px !important;
+}
+
+.form-content button {
+  width: 100%;
+  background: #0d28a6;
+  border-radius: 2px;
+  margin-top: 16px;
+}
+
+.form-content label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  color: #222222;
+}
+
+.form-content input {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+/* Kelompok 3 */
+
+body {
+  font-family: Hevetica;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+thead {
+  background: #cfd4ed;
+}
+
+.drop .form-select {
+  width: 62px;
+  height: 36px;
+  font-size: 12px;
+}
+
+.jtp .form-select {
+  width: 76px;
+  height: 36px;
+  font-size: 12px;
+}
+.paging nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a.page-link {
+  height: 38px;
+  width: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a8a8a;
+}
+.page-item.active .page-link {
+  background: #cfd4ed;
+  color: #0d28a6;
+  border-color: #0d28a6;
+}
+.form-select {
+  display: inline;
+}
+.btn {
+  display: inline;
+  background: #0d28a6;
+  color: #fff;
+  width: 43px;
+  height: 36px;
+}
+
+.btn-admin {
+  border: none;
+  background-color: #0d28a6;
+  padding: 0.4rem 0.5rem;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  border-radius: 3px;
+}

@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../stylesheets/Navbar.css";
 
 function Navbar() {
   return (
@@ -36,7 +34,12 @@ function Navbar() {
           <a className="nav-link link mr-4" href="#">
             FAQ
           </a>
-          <Link to={"/register"}>Register</Link>
+          <a
+            class="nav-link btn-web px-3 py-2 font-weight-bold"
+            href="/register"
+          >
+            Register
+          </a>
         </div>
       </div>
     </nav>

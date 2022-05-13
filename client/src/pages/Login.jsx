@@ -1,13 +1,11 @@
 import React, { useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
-
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
-
-//Proses 7. Menuju ke folder actions dan file auth.js
 import { login } from "../actions/auth";
+import "../stylesheets/Register.css";
 
 const required = (value) => {
   if (!value) {
@@ -91,7 +89,7 @@ function Login(props) {
             />
           </div>
           <div className="col-4">
-            <div className="row h-100">
+            <div className="row h-100 mx-5">
               <div className="col-12 d-flex flex-column justify-content-center">
                 <img
                   src="./image/logo-bcr.png"
@@ -102,40 +100,19 @@ function Login(props) {
                     marginBottom: "1.5rem",
                   }}
                 />
-                <p style={{ fontWeight: "bold", fontSize: "1.5rem" }}>
+                <p
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "1.5rem",
+                    marginBottom: "1rem",
+                  }}
+                >
                   Welcome, Admin BCR
                 </p>
 
-                {/* <Form>
-                  <div className="form-group">
-                    <label htmlFor="username">Email</label>
-                    <Input
-                      type="text"
-                      className="form-control input-login"
-                      name="username"
-                      placeholder="Contoh: ahmad@gmail.com"
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="password">Password</label>
-                    <Input
-                      type="password"
-                      className="form-control input-login"
-                      name="password"
-                      placeholder="6+ karakter"
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <button className="btn btn-primary btn-block input-login">
-                      <span>Sign In</span>
-                    </button>
-                  </div>
-                </Form> */}
                 <Form onSubmit={handleLogin} ref={form}>
-                  <div className="form-group">
-                    <label htmlFor="username">username</label>
+                  <div className="form-group input-register">
+                    <label htmlFor="username">Username</label>
                     <Input
                       type="text"
                       className="form-control"
@@ -146,7 +123,7 @@ function Login(props) {
                     />
                   </div>
 
-                  <div className="form-group">
+                  <div className="form-group input-register">
                     <label htmlFor="password">Password</label>
                     <Input
                       type="password"
@@ -160,10 +137,7 @@ function Login(props) {
 
                   {/* Task 2. Tombol login Ketemum (what, why, when, how) */}
                   <div className="form-group">
-                    <button
-                      className="btn btn-primary btn-block"
-                      disabled={loading}
-                    >
+                    <button className="btn-login" disabled={loading}>
                       {loading && (
                         <span className="spinner-border spinner-border-sm"></span>
                       )}

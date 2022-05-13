@@ -1,5 +1,5 @@
 import React from "react";
-import "../stylesheets/Navbar.css";
+import "../stylesheets/Page.css";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -210,8 +210,8 @@ function Main() {
               </div>
               <OwlCarousel className="owl-theme" loop margin={5} nav>
                 <div className="">
-                  <div className="row py-5 m-2 custom-user-testi">
-                    <div className="col-3 mt-4 pt-2">
+                  <div className="row py-5 m-2 custom-user-testi  d-flex align-items-center">
+                    <div className="col-3 pt-2">
                       <img
                         className="w-75"
                         src={require("../images/img_photo-1.png")}
@@ -238,8 +238,8 @@ function Main() {
                 </div>
 
                 <div className="">
-                  <div className="row py-5 m-2 custom-user-testi">
-                    <div className="col-3 mt-4 pt-2">
+                  <div className="row py-5 m-2 custom-user-testi  d-flex align-items-center">
+                    <div className="col-3 pt-2">
                       <img
                         className="w-75"
                         src={require("../images/img_photo-2.png")}
@@ -266,8 +266,8 @@ function Main() {
                 </div>
 
                 <div className="">
-                  <div className="row py-5 m-2 custom-user-testi">
-                    <div className="col-3 mt-4 pt-2">
+                  <div className="row py-5 m-2 custom-user-testi  d-flex align-items-center">
+                    <div className="col-3 pt-2">
                       <img
                         className="w-75"
                         src={require("../images/img_photo-1.png")}
@@ -317,14 +317,14 @@ function Main() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <a className="btn btn-web px-5 py-2 font-weight-bold" href="#">
+                <a className="btn-web px-5 py-2 font-weight-bold" href="#">
                   Mulai Sewa Mobil
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div id="faq" style={{ marginBottom: "9.5rem" }}>
+        <div id="faq" style={{ marginBottom: "6rem" }}>
           <div className="container">
             <div className="row">
               <div className="col-md-6">
